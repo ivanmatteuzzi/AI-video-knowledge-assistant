@@ -3,6 +3,7 @@ fastapi
 uvicorn[standard]
 python-dotenv
 pydantic
+python-multipart
 
 # LLM and AI framework
 langchain
@@ -11,12 +12,17 @@ langchain-community
 langgraph
 langgraph-checkpoint-sqlite
 
-# Vector database and embeddings
+# Primary vector database: Neon PostgreSQL + pgvector
+psycopg[binary]
+pgvector
+
+# Embeddings and additional vector store components
 chromadb
 langchain-chroma
 
-# YouTube transcript
+# YouTube transcript processing
 youtube-transcript-api
+yt-dlp
 
 # Testing
 pytest
@@ -24,9 +30,3 @@ httpx
 
 # Evaluation and observability
 langsmith
-
-yt-dlp
-python-multipart
-
-psycopg[binary]
-pgvector

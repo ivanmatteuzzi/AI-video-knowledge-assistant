@@ -29,6 +29,11 @@ htmlcov/
 .DS_Store
 Thumbs.db
 
-# Vector database and local data
+# Local databases and generated data
 chroma_db/
 storage/
+
+# Local database files
+*.sqlite
+*.sqlite3
+*.db
